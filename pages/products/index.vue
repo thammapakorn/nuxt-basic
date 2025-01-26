@@ -17,7 +17,6 @@ useHead({
     ]
 })
 const {data: data} = await useFetch('https://dummyjson.com/products?limit=10') //เอาข้อมูลมาจาก dummyjson หมวด products
-console.log(data)
 </script>
 
 <style scoped>
