@@ -7,5 +7,7 @@ export default defineNuxtConfig({
         {name:"description",content:"รายละเอียดเว็บไซต์"}
       ]
     }
-  }
+  },
+
+  compatibilityDate: "2025-01-26"
 })
