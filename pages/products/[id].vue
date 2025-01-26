@@ -1,12 +1,16 @@
 <template>
     <div>
+        <Head>
+            <Title>PreamShop | {{ product.title }}</Title>
+            <Meta name="description" :content=product.description />
+        </Head>
         <div class="container">
-            <img :src=prodouct.thumbnail>
+            <img :src=product.thumbnail>
             <div class="detail">
-                <h1>ชื่อสินค้า : {{prodouct.title}} </h1>
-                <h2>รายละเอียดสินค้า : {{ prodouct.description }}</h2>
-                <h2>หมวดหมู่ : {{ prodouct.category }}</h2>
-                <h2>ราคา : {{ prodouct.price }}</h2>
+                <h1>ชื่อสินค้า : {{product.title}} </h1>
+                <h2>รายละเอียดสินค้า : {{ product.description }}</h2>
+                <h2>หมวดหมู่ : {{ product.category }}</h2>
+                <h2>ราคา : {{ product.price }}</h2>
             </div>
         </div>
     </div>
@@ -14,8 +18,8 @@
 
 <script setup>
     const {id} = useRoute().params
-    const {data: prodouct} = await useFetch('https://dummyjson.com/products/'+id) //เอาข้อมูลมาจาก dummyjson หมวด products
-    //console.log(prodouct) //เอาไว้ดูรายละเอียดใน inspect
+    const {data: product} = await useFetch('https://dummyjson.com/products/'+id) //เอาข้อมูลมาจาก dummyjson หมวด products
+    //console.log(product) //เอาไว้ดูรายละเอียดใน inspect
 </script>
 
 <style scoped>

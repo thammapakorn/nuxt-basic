@@ -1,5 +1,9 @@
 <template>
     <div class="container">
+            <Head>
+                <Title>PreamShop | หน้าแรกของเว็บไซต์</Title>
+                <Meta name="description" :content="หน้าแรกของเว็บไซต์" />
+            </Head>
             <h1>หน้าแรก index.vue</h1>
             <img src="/image/shopping.svg">
     </div>
@@ -7,7 +11,7 @@
 
 <script setup>
 useHead({
-    title:"หน้าแรกของเว็บไซต์",
+    title:"PreamShop | Homepage",
     meta:[
         {name:"description",content:"ร้านค้าขายคีย์บอร์ด"}
     ]

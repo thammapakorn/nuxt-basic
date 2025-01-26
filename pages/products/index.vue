@@ -11,9 +11,9 @@
 
 <script setup>
 useHead({
-    title:"สินค้าทั้งหมด",
+    title:"PreamShop | สินค้าทั้งหมด",
     meta:[
-        { name:"description",content:"ร้านค้าขายคีย์บอร์ด" }
+        { name:"description",content:"ร้านค้าขายของ" }
     ]
 })
 const {data: data} = await useFetch('https://dummyjson.com/products?limit=10') //เอาข้อมูลมาจาก dummyjson หมวด products

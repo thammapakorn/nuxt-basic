@@ -7,9 +7,9 @@
 
 <script setup>
 useHead({
-    title:"เกี่ยวกับร้าน",
+    title:"PreamShop | About",
     meta:[
-        {name:"description",content:"ร้านค้าขายคีย์บอร์ด"}
+        {name:"description",content:"ร้านค้าขายของ"}
     ]
 })
 </script>
