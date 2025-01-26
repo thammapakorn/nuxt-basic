@@ -19,5 +19,11 @@
 </script>
 
 <style scoped>
-
+.container{
+    display: flex;
+    justify-content: center;
+}
+.detail{
+    padding-left: 10px;
+}
 </style>
