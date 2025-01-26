@@ -2,7 +2,7 @@
     <div>
         <header>
             <nav>
-                <h1>Resume</h1>
+                <h1 class="logo">Resume</h1>
                 <NuxtLink to="/">หน้าแรก</NuxtLink>
                 <NuxtLink to="/about">เกี่ยวกับเรา</NuxtLink>
                 <NuxtLink to="products">สินค้าทั้งหมด</NuxtLink>
@@ -13,9 +13,31 @@
 </template>
 
 <script setup>
-import { defineNuxtLink } from 'nuxt/app';
-
 
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+nav{
+    margin: 10px auto;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c58d8d;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 18px;
+    padding: 10px;
+}
+nav a:hover{
+    color: aquamarine;
+}
+.logo{
+    margin-right: auto;
+    padding-left: 10px;
+    color: white;
+}
+</style>
