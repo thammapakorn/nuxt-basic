@@ -1,9 +1,11 @@
 <template>
     <div>
-        <h1>สินค้าทั้งหมดในเว็บไซต์</h1>
-        <ul v-for="product in data.products">
-            <li>{{ product.title }}</li>
-        </ul>
+        <div v-for="product in data.products">
+            <NuxtLink :to="`/products/${product.id}`">
+                <h2>{{ product.title }}</h2>
+            </NuxtLink>
+            <img :src=product.thumbnail>
+        </div>
     </div>
 </template>
 
