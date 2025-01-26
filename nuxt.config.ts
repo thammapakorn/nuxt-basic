@@ -2,7 +2,10 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      title:"ร้านค้าขายคีย์บอร์ด"
+      title:"ร้านค้าขายคีย์บอร์ด",
+      meta:[
+        {name:"description",content:"รายละเอียดเว็บไซต์"}
+      ]
     }
   }
 })
