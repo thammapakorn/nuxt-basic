@@ -6,7 +6,12 @@
 </template>
 
 <script setup>
-
+useHead({
+    title:"หน้าแรกของเว็บไซต์",
+    meta:[
+        {name:"description",content:"ร้านค้าขายคีย์บอร์ด"}
+    ]
+})
 </script>
 
 <style scoped>

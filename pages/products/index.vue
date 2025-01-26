@@ -5,7 +5,12 @@
 </template>
 
 <script setup>
-
+useHead({
+    title:"สินค้าทั้งหมด",
+    meta:[
+        {name:"description",content:"ร้านค้าขายคีย์บอร์ด"}
+    ]
+})
 </script>
 
 <style lang="scss" scoped>
